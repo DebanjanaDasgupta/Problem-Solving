@@ -1,3 +1,4 @@
+// Finds the maximum integer in an array using recursion
 package Recursion;
 
 public class MaxInteger {
