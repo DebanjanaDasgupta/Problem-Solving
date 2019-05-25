@@ -1,8 +1,9 @@
+//Given an array, checks if the elements are in sequence (assumption --> the sequence is an increasing sequence)
 package Recursion;
 
 public class Sequence {
 	public static void main(String args[]) {
-		int arr[] = {1,2,3,4,5}; //assumption --> the sequence is an increasing sequence
+		int arr[] = {1,2,3,4,5}; 
 		System.out.println(checkInSequence(arr));
 	}
 	//Itertive solution  with Time complexity O(n) since only one loop running
