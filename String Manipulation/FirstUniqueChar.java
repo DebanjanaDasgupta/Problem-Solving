@@ -1,4 +1,8 @@
-//Find first non-repeating character in a string
+/*
+ * Asked in Amazon(SDE1) phone screening, Amgen(Data Engineering Intern) final interview
+ * Problem: Find first non-repeating character in a string
+ */
+
 
 import java.util.*;
 
