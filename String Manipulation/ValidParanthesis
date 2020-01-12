@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Solution {
+    public boolean isValid(String s) {
+        if(s.isEmpty()){
+            return true;
+        }
+        
+        Deque<Character> stack = new ArrayDeque<Character>();
+        char[] charArr = s.toCharArray();
+        char top;
+        
+        for (char c:charArr){
+            if (c == '{' || c == '[' || c == '(') {
+                stack.push(c);
+            }
+            else {
+                if (stack.isEmpty()){
+                    return false;
+                }
+                else{
+                    top = stack.pop();
+                    if( (top == '{' && c != '}') || (top == '[' && c != ']') || (top == '(' && c != ')') ){
+                        return false;
+                    }
+                }
+            }
+        }
+        
+        if (!stack.isEmpty()){
+            return false;
+        }
+        
+        return true;
+    }
+}
